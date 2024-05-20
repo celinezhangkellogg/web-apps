@@ -1,0 +1,18 @@
+<h1>Dice!</h1>
+
+<%
+die1 = rand(1..6)
+die2 = rand(1..6)
+total = die1 + die2
+%>
+
+<p>
+<img src="/image/dice/<%= die1 %>.svg" alt="Random die">
+<img src="/image/dice/<%= die2 %>.svg" alt="Random die">
+</p>
+
+<p>The total is <%=total%></p>
+
+<p>
+<a href="/dice">Roll again!</a>
+</p>
